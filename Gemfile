@@ -44,11 +44,7 @@ end
 group :test, :cucumber do
   gem 'factory_girl',     '~> 2.6'
   
-  gem 'guard-rspec'
-  gem 'simpleconv'
-  gem 'simpleconv-rcov'
   gem 'ci_reporter'
-  gem 'rb-inotify' 
   gem 'rspec',            '~> 2.11.0'
   gem 'rspec-rails',      '~> 2.11.0'
   gem 'rspec-instafail',  '~> 0.2.4'
