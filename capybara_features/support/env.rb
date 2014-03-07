@@ -20,7 +20,12 @@ puts Rails.env
 Capybara.register_driver :selenium do |app|
   http_client = Selenium::WebDriver::Remote::Http::Default.new
   http_client.timeout = 60
-  Capybara::Selenium::Driver.new(app, :browser => :firefox, :http_client => http_client)
+  Capybara::Selenium::Driver.new(app, 
+    :browser => :remote,
+    :url => 'http://ec2-54-83-51-96.compute-1.amazonaws.com',
+    :desired_capabilities => :firefox,
+    :http_client => http_client
+  )
 end
 
 Capybara.configure do |config|
