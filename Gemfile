@@ -33,6 +33,7 @@ gem "zipruby-compat", :require => 'zipruby', :git => "https://github.com/jawspea
 
 gem 'rufus-scheduler', '~> 2.0.18', :require => false
 gem 'daemons',         '~> 1.1.9',  :require => false
+gem 'simplecov', '~> 0.7.1'
 
 group :development, :assets, :cucumber do
   gem 'sass-rails',    '~> 3.2.3'
@@ -42,6 +43,8 @@ group :development, :assets, :cucumber do
 end
 
 group :test, :cucumber do
+  gem 'rubocop'
+  gem 'metric_fu'
   gem 'factory_girl',     '~> 2.6'
   
   gem 'ci_reporter'
