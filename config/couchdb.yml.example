@@ -4,8 +4,8 @@ base: &base
   https_port: 6984
   prefix: rapidftr
   suffix: <%= Rails.env %>
-  username: "rapidftr"
-  password: "rapidftr"
+  username: "admin"
+  password: "admin"
   ssl: false
 
 development:

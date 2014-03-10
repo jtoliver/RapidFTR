@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
 
+
+gem 'pry'
+gem 'pry-debugger'
+
 gem 'rapidftr_addon', :git => 'https://github.com/rapidftr/rapidftr-addon.git', :branch => 'master'
 gem 'rapidftr_addon_cpims', :git => 'https://github.com/rapidftr/rapidftr-addon-cpims.git', :branch => 'master'
 
